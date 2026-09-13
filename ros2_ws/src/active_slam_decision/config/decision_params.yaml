@@ -1,0 +1,28 @@
+# Parametres par defaut des noeuds active_slam_decision.
+# Reference / documentation : les valeurs sont deja injectees directement
+# dans launch/active_slam.launch.py. Utilise ce fichier si tu preferes
+# charger les parametres via un fichier yaml (parameters=[chemin_yaml])
+# plutot que des dicts inline dans le launch file.
+
+active_slam_decision_maker:
+  ros__parameters:
+    strategy: "weighted"          # weighted | random | distance | info_gain
+    weight_information_gain: 0.30
+    weight_localization_uncertainty: 0.20
+    weight_loop_closure: 0.20
+    weight_distance: 0.15
+    weight_safety: 0.15
+    sensor_range: 20.0
+    max_candidate_distance: 80.0
+    obstacles_topic: "/obstacle_detection/obstacles"
+    log_file: ""
+
+active_slam_candidate_generator:
+  ros__parameters:
+    carla_host: "192.168.1.6"
+    carla_port: 2000
+    role_name: "ego"
+    search_radius: 60.0
+    min_candidate_distance: 5.0
+    waypoint_spacing: 8.0
+    publish_period: 3.0

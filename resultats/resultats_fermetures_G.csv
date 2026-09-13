@@ -1,0 +1,16 @@
+bras,graine,base,liens_voisinage,fermetures_globales,liens_proximite,corrections,noeuds
+weighted,1,active_slam_20260913_133505.db,328,60,6,66,210
+weighted,2,active_slam_20260913_143455.db,328,18,0,18,209
+weighted,3,active_slam_20260913_153254.db,336,46,18,64,209
+weighted,4,active_slam_20260913_163059.db,420,26,2,28,244
+weighted,5,active_slam_20260913_172305.db,352,22,0,22,211
+random,1,active_slam_20260913_140448.db,324,58,0,58,213
+random,2,active_slam_20260913_145040.db,316,32,18,50,210
+random,3,active_slam_20260913_154838.db,348,45,4,49,212
+random,4,active_slam_20260913_165307.db,352,37,0,37,210
+random,5,active_slam_20260913_173859.db,324,10,20,30,209
+predefinie,1,slam_eval_20260913_142020.db,132,1,0,1,142
+predefinie,2,slam_eval_20260913_151730.db,334,0,18,18,182
+predefinie,3,slam_eval_20260913_161645.db,228,9,0,9,128
+predefinie,4,slam_eval_20260913_170841.db,119,0,0,0,125
+predefinie,5,slam_eval_20260913_175503.db,157,9,0,9,184

@@ -1,0 +1,41 @@
+# Bases RTAB-Map : environ 100 Mo chacune, non redistribuables.
+# GitHub refuse tout fichier de plus de 100 Mo, et un fichier committe
+# reste dans l'historique meme apres suppression.
+*.db
+*.db-shm
+*.db-wal
+maps/
+
+# Journaux bruts des campagnes
+logs_campagne*/
+*.log
+
+# Artefacts de compilation ROS 2 / colcon
+build/
+install/
+log/
+*.pyc
+__pycache__/
+
+# Sauvegardes des correctifs
+*.bak
+*.bak_*
+*.tar.gz
+
+# Video de demonstration : a publier en release GitHub
+*.mp4
+*.mkv
+
+# Environnements Python
+.venv/
+venv/
+
+# Systeme
+.DS_Store
+Thumbs.db
+
+# Flux alternatifs NTFS exposes par WSL
+*Zone.Identifier
+
+# Fichiers casses conserves a la main : git s'en charge desormais
+*.CASSE

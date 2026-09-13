@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>active_slam_decision</name>
+  <version>1.0.0</version>
+  <description>
+    Fonction de decision multi-criteres pour l'Active SLAM : generation de
+    destinations candidates sur le reseau routier et selection automatique
+    de la prochaine destination (gain d'information, incertitude de
+    localisation, potentiel de fermeture de boucle, distance, securite).
+  </description>
+  <maintainer email="ubuntu@todo.todo">ubuntu</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>rtabmap_msgs</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

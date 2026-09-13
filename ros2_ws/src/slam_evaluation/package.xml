@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>slam_evaluation</name>
+  <version>1.0.0</version>
+  <description>
+    Systeme de reference pour la comparaison Active SLAM : SLAM classique
+    a trajectoire predefinie sous ROS 2 et CARLA, et evaluation de la
+    precision de localisation (ATE) par rapport a la verite terrain du
+    simulateur.
+  </description>
+  <maintainer email="yassmine.jallouli2003@gmail.com">Yassmine Jallouli</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>carla_msgs</depend>
+
+  <!-- Le lancement du SLAM classique utilise traffic_spawner, defini
+       dans active_slam_decision : le trafic doit etre present des deux
+       cotes de la comparaison. Dependance d'execution uniquement, ce
+       paquet ne compile rien depuis l'autre. -->
+  <exec_depend>active_slam_decision</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
